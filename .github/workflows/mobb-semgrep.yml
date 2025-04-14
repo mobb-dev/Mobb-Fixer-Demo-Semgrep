@@ -29,7 +29,7 @@ jobs:
         run: |
           pip install semgrep
           # semgrep login
-          semgrep scan --sarif --output semgrep_report.sarif
+          semgrep scan --sarif --output semgrep_report.sarif --verbose
       
      
       - name: Run Mobb on the findings and get fixes
